@@ -1,0 +1,83 @@
+:root{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(49, 142, 255);
+}
+BODY{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div{
+    border-radius: 10px;
+    background-color: rgba(161, 194, 255, 0.557);
+    text-align: center;
+    padding: 20px;
+    width: 60%;
+    height: 420px;
+}
+.after_title{
+    display: grid;
+    gap: 20px;
+}
+.before_cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.before_cards1 label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+#date{
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+}
+.cards{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.none{    
+    display: none;
+}
+.card{
+    display: block;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    padding: 0;
+    background-color: rgb(64, 143, 255);
+}
+.card p{
+    background-color: aliceblue;
+    border-radius: 0 0 10px 10px;
+    font-size: 25px;
+    padding: 22px;
+}
+
+@media screen and (max-width:1182px){
+    .div{
+        height: 565px;
+    }
+}
+@media screen and (max-width:853px){
+    .before_cards{
+        display: inherit;
+        text-align: center;
+        width: fit-content;
+    }
+    .div{
+        height: 600px;
+    }   
+}
+@media screen and (max-width:765px){
+    .div{
+        height: 1060px;
+    }
+}
